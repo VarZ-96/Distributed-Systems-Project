@@ -155,3 +155,33 @@ vite.config.ts.timestamp-*
 .nx/cache
 .nx/workspace-data
 .nx/migrate-runs
+
+# Cryptographic keys, certificates & local secrets (OAuth / JWT signing)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+secrets/
+certs/
+
+# Local databases & Docker overrides
+*.db
+*.sqlite
+*.sqlite3
+docker-compose.override.yml
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
